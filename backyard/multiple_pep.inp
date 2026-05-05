@@ -1,0 +1,12 @@
+tolerance 10.0
+
+output test.pdb
+filetype pdb
+
+structure 4QHU_ACE_VLVIY_NME.pdb
+    number 50
+    inside cube 0. 0. 0. 125.
+    inside box 8. 8. 8. 109. 109. 109.
+end structure
+
+add_box_sides
