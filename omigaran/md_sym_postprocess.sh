@@ -20,6 +20,7 @@ set -eo pipefail
     echo "System" | gmx trjconv -s md_sym/md.tpr \
         -f md_sym/md_center.xtc \
         -o md_sym/md_last_frame.gro -dump 999999
+    
 
     # RMSD: root mean square deviation
     echo "Backbone Backbone" | gmx rms -s md_sym/md.tpr \
@@ -41,4 +42,7 @@ set -eo pipefail
     # Plotting the RMSD and radius of gyration
     python ploting.py --file md_sym/rmsd.xvg --title "RMSD" --folder md_sym
     python ploting.py --file md_sym/gyrate.xvg --title "Radius_of_Gyration" --folder md_sym --cols 1 2 3 4
+
+    # compress the md_sym folder to save space
+    tar --exclude=".*" -czvf md_sym.tar.gz md_sym
 } 2>&1 | tee md_sym/md_sym_postprocess.log

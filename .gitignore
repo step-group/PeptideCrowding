@@ -106,7 +106,8 @@ ipython_config.py
 .LSOverride
 
 # Icon must end with two \r
-Icon
+Icon
+
 
 # Thumbnails
 ._*
@@ -290,3 +291,7 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 >>>>>>> 384e05d (Initial commit)
+
+# avoid md_sym folders
+md_sym/
+
