@@ -1,0 +1,65 @@
+# This file was created Sat Jul 25 23:09:30 2026
+# Created by:
+#                :-) GROMACS - gmx energy, 2025.4-conda_forge (-:
+# 
+# Executable:   /Users/gabbi/miniconda3/envs/MD/bin.ARM_NEON_ASIMD/gmx
+# Data prefix:  /Users/gabbi/miniconda3/envs/MD
+# Working dir:  /Users/gabbi/Desktop/Repos/PeptideCrowding/omigaran
+# Command line:
+#   gmx energy -f nvt_eq/nvt.edr -o nvt_eq/temperature.xvg
+# gmx energy is part of G R O M A C S:
+#
+# Georgetown Riga Oslo Madrid Amsterdam Chisinau Stockholm
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(K)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Temperature"
+    0.000000  297.765411
+    5.000000  278.360779
+   10.000000  295.960846
+   15.000000  295.800690
+   20.000000  299.866547
+   25.000000  293.713196
+   30.000000  300.841858
+   35.000000  300.995117
+   40.000000  298.608307
+   45.000000  295.467010
+   50.000000  296.269104
+   55.000000  294.790253
+   60.000000  297.632721
+   65.000000  297.552948
+   70.000000  295.096008
+   75.000000  294.614136
+   80.000000  296.967041
+   85.000000  298.340302
+   90.000000  298.083801
+   95.000000  295.859985
+  100.000000  299.886932
+  105.000000  301.196106
+  110.000000  299.771698
+  115.000000  296.143127
+  120.000000  298.606354
+  125.000000  295.883698
+  130.000000  300.859985
+  135.000000  299.399750
+  140.000000  297.291351
+  145.000000  294.665985
+  150.000000  295.939606
+  155.000000  295.917969
+  160.000000  297.070984
+  165.000000  303.599213
+  170.000000  295.369324
+  175.000000  298.832031
+  180.000000  302.456757
+  185.000000  297.475433
+  190.000000  294.933746
+  195.000000  302.434631
+  200.000000  299.688324
