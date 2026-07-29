@@ -290,7 +290,6 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
->>>>>>> 384e05d (Initial commit)
 
 # avoid md_sym folders
 md_sym/
