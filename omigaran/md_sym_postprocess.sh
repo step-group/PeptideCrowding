@@ -21,6 +21,17 @@ set -eo pipefail
         -f md_sym/md_center.xtc \
         -o md_sym/md_last_frame.gro -dump 999999
     
+    # trjconv: correct for periodic boundary conditions (PBC)
+    # -s : input structure + mass file (.tpr)
+    # -f : input trajectory file (.xtc)
+    # -o : output trajectory file (.xtc)
+    # -dump 999999 : extract the last frame of the trajectory (at 999999 ps)
+    # echo "System" to get the whole system (peptide + solvent) in the output file
+
+    echo "Protein" | gmx trjconv -s md_sym/md.tpr -f md_sym/md_last_frame.gro \
+    -o omiganan_relaxed.pdb
+
+    # same as before but echo "Protein" to get only the peptide in the output file.
 
     # RMSD: root mean square deviation
     echo "Backbone Backbone" | gmx rms -s md_sym/md.tpr \

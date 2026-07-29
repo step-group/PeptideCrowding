@@ -1,8 +1,8 @@
 ;
 ;	File 'mdout.mdp' was generated
 ;	By user: gabbi (501)
-;	On host: CompuGabby.local
-;	At date: Sun Jul 26 00:09:54 2026
+;	On host: compugabby.lan
+;	At date: Tue Jul 28 17:42:22 2026
 ;
 ;	Created by:
 ;	               :-) GROMACS - gmx grompp, 2025.4-conda_forge (-:
@@ -11,7 +11,7 @@
 ;	Data prefix:  /Users/gabbi/miniconda3/envs/MD
 ;	Working dir:  /Users/gabbi/Desktop/Repos/PeptideCrowding/omigaran
 ;	Command line:
-;	  gmx grompp -f mdp_files/md_sym.mdp -c npt_eq/npt.gro -p structure/omigaran.top -r npt_eq/npt.gro -o md_sym/md.tpr
+;	  gmx grompp -f mdp_files/md_sym.mdp -c npt_eq/npt.gro -r npt_eq/npt.gro -t npt_eq/npt.cpt -p structure/omigaran.top -o md_sym/md.tpr
 
 ; VARIOUS PREPROCESSING OPTIONS
 ; Preprocessor information: use cpp syntax.
@@ -175,7 +175,7 @@ annealing-temp           =
 ; GENERATE VELOCITIES FOR STARTUP RUN
 gen_vel                  = no
 gen-temp                 = 300
-gen-seed                 = -1094848574
+gen-seed                 = -1644691969
 
 ; OPTIONS FOR BONDS    
 constraints              = h-bonds
