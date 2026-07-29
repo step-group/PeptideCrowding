@@ -11,7 +11,6 @@ mkdir -p nvt_eq
                -c em_sd/em.gro \
                -p structure/omigaran.top \
                -r em_sd/em.gro \
-               -t em_sd/em.cpt \
                -o nvt_eq/nvt.tpr
     # grompp: pre-processes the input files for GROMACS
     # -f : input mdp file (parameters for the simulation) <- In this case the parameters for NVT equilibration

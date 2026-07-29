@@ -1,7 +1,7 @@
 title                   = Omigaran production MD (10 ns)
 ; Run parameters
 integrator              = md        ; leap-frog integrator
-nsteps                  = 5000000   ; 2 * 5000000 = 10000 ps (10 ns)
+nsteps                  = 2500000   ; 0.002 * 2500000 = 5000 ps (5 ns)
 dt                      = 0.002     ; 2 fs
 ; Output control
 nstxout                 = 0         ; suppress bulky .trr file by specifying
