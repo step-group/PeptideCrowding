@@ -24,7 +24,7 @@ mkdir -p Ionized
     # -f : input structure file (.pdb)
     # -o : output structure file (.gro)
     # -c : center the system in the box
-    # -box : box dimensions (15 nm x 15 nm x 15 nm)
+    # -box : box dimensions (12.5 nm x 12.5 nm x 12.5 nm)
     echo "--------------------------------"
     echo "GROMACS solvate"
     gmx solvate -cp structures/omigaran_crowded.gro\

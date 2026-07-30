@@ -3,8 +3,10 @@ filetype pdb
 output structures/omigaran_crowded.pdb
 add_amber_ter
 seed 12345
+nloop 100
 
 structure structures/omiganan_relaxed.pdb
   number 40
-  inside box 8. 8. 8. 117. 117. 117.
+  inside box 6. 6. 6. 119. 119. 119.
 end structure
+

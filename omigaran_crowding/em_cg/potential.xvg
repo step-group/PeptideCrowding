@@ -1,0 +1,27 @@
+# This file was created Thu Jul 30 11:55:42 2026
+# Created by:
+#                      :-) GROMACS - gmx energy, 2026.3 (-:
+# 
+# Executable:   /usr/local/gromacs/bin/gmx
+# Data prefix:  /usr/local/gromacs
+# Working dir:  /home/lafayette/Escritorio/PeptideCrowding/omigaran_crowding
+# Command line:
+#   gmx energy -f em_cg/em.edr -o em_cg/potential.xvg
+# gmx energy is part of G R O M A C S:
+#
+# GROningen MAchine for Chemical Simulation
+#
+@    title "GROMACS Energies"
+@    xaxis  label "Time (ps)"
+@    yaxis  label "(kJ/mol)"
+@TYPE xy
+@ view 0.15, 0.15, 0.75, 0.85
+@ legend on
+@ legend box on
+@ legend loctype view
+@ legend 0.78, 0.8
+@ legend length 2
+@ s0 legend "Potential"
+    0.000000  -3106457.500000
+    0.000000  -3106471.250000
+  876.000000  -3155403.750000

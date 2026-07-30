@@ -1,9 +1,9 @@
 ; min_cg.mdp - conjugate gradient, run after steepest descent
 integrator      = cg          ; conjugate gradient minimization
-emtol           = 200.0       ; stop when Fmax < 200 kJ/mol/nm
-emstep          = 0.001       ; initial step size
+emtol           = 10.0       ; stop when Fmax < 200 kJ/mol/nm
+emstep          = 0.0005       ; initial step size
 nsteps          = 50000
-nstcgsteep      = 500         ; take 1 steepest-descent step every 500
+nstcgsteep      = 100         ; take 1 steepest-descent step every 500
 
 nstlist         = 1
 cutoff-scheme   = Verlet

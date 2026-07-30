@@ -1,7 +1,7 @@
 ; em_sd.mdp - steepest descent, stage 1 of 2
 integrator      = steep       ; steepest descent minimization
-emtol           = 1000.0      ; stop when Fmax < 1000 kJ/mol/nm
-emstep          = 0.001       ; initial step size (GROMACS auto-adjusts)
+emtol           = 50.0      ; stop when Fmax < 500 kJ/mol/nm
+emstep          = 0.00005       ; initial step size (GROMACS auto-adjusts)
 nsteps          = 50000
 
 nstlist         = 1

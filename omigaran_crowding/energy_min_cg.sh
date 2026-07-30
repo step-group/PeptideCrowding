@@ -7,7 +7,7 @@ mkdir -p em_cg
     echo "ENERGY MINIMIZATION WITH CONJUGATE GRADIENT"
     gmx grompp -f mdp_files/em_cg.mdp \
             -c em_sd/em.gro \
-            -p structure/omigaran.top \
+            -p structures/omigaran_crowded.top \
             -o em_cg/em.tpr
     # grompp: pre-processes the input files for GROMACS
     # -f : input mdp file (parameters for the simulation) <- In this case the parameters 

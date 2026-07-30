@@ -6,8 +6,8 @@ mkdir -p em_sd
 {
     echo "ENERGY MINIMIZATION WITH STEEPES DESCENT"
     gmx grompp -f mdp_files/em_sd.mdp \
-            -c structure/omigaran_crowded.gro \
-            -p structure/omigaran_crowded.top \
+            -c Ionized/ionized.gro \
+            -p structures/omigaran_crowded.top \
             -o em_sd/em.tpr
     # grompp: pre-processes the input files for GROMACS
     # -f : input mdp file (parameters for the simulation) <- In this case the parameters 
